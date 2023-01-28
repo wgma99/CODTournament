@@ -1,0 +1,57 @@
+.section--contactUs {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: url('../assets/img/mj2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.section--contactUs h2 {
+    position: relative;
+    padding: 15px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: #363636bb;
+    border-radius: 25px;
+    box-shadow: 0 0 15px #1e1e1e;
+    width: 80%;
+}
+
+.section--contactUs .social--contain {
+    position: relative;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.social--contain img {
+    filter: drop-shadow(0 0 20px #1e1e1e);
+    width: 64px;
+}
+
+.social--contain .icon--contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: #fff;
+}

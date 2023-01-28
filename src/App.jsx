@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header';
 import PaymentMethods from './components/PaymentMethods';
+import ContactUs from './components/ContactUs';
 
 import br from './assets/img/br.jpg';
 import mj from './assets/img/mj.jpg';
@@ -44,6 +45,7 @@ function App() {
       </section>
 
       <PaymentMethods />
+      <ContactUs />
     </div>
   )
 }
