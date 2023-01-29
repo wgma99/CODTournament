@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function ContactUs() {
   return (
-    <section className='section--contactUs'>
+    <section id='contactUs' className='section--contactUs'>
         <h2>Únete a nuestros grupos y redes sociales</h2>
         <div className='social--contain'>
             <a href='https://chat.whatsapp.com/GU3IbRKINssGaUOUi0NAvS' target='_blank' className='icon--contain'>
@@ -26,8 +26,7 @@ export default function ContactUs() {
                 <img src="https://img.icons8.com/ios-filled/64/ffeb18/twitch.png" alt="Twitch Icon" />
                 Twitch
             </a>
-        </div>
-        
+        </div>  
     </section>
   )
 }

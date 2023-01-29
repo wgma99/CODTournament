@@ -16,12 +16,14 @@ export default function Header() {
   return (
     <>
     <header className={scroll ? 'active' : ''}>
-        <div onClick={() => {setMenu(!menu)}} className='menu-icon'></div>
+        <div onClick={() => {setMenu(!menu)}} className={`menu--icon ${ menu ? 'menuClose--icon' : ''}`}></div>
         <nav className={ menu ? 'menuMobile' : ''}>
             <ul>
-                <li><a href="About us"></a></li>
-                <li><a href=""></a></li>
+                <li><a onClick={() => {setMenu(!menu)}} href="#aboutUs">Sobre nosotros</a></li> <hr />
+                <li><a onClick={() => {setMenu(!menu)}} href="#paymentMethods">Métodos de pago</a></li> <hr />
+                <li><a onClick={() => {setMenu(!menu)}} href="#contactUs">Nuestras redes</a></li> <hr />
             </ul>
+            <div onClick={() => {setMenu(!menu)}} className='closeMenuMobile'></div>
         </nav>        
         <picture>
             <img src={cod} alt="Logo de Call Of Duty Mobile" />

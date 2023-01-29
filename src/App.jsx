@@ -3,6 +3,7 @@ import './App.css'
 import Header from './components/Header';
 import PaymentMethods from './components/PaymentMethods';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 
 import br from './assets/img/br.jpg';
 import mj from './assets/img/mj.jpg';
@@ -16,7 +17,7 @@ function App() {
     <div className="App">
       <div className='App--bg'></div>
       <Header/>
-      <section className='section-aboutUs'>
+      <section id='aboutUs' className='section-aboutUs'>
         <h2 className='title'>Somos un grupo creado para la organización y desarrollo de campeonatos de partidas en Call Of Duty Mobile.</h2>
         <p className='title-p'>Los cuales serán realizados dos veces por semana.</p>
         <h2 className='types'>Tipos de Partidas</h2>
@@ -46,6 +47,7 @@ function App() {
 
       <PaymentMethods />
       <ContactUs />
+      <Footer />
     </div>
   )
 }

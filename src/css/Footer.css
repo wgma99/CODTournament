@@ -1,0 +1,49 @@
+.footer {
+    background-color: #010101;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px 30px 30px;
+}
+
+.infoDeveloper {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Sofia Sans', sans-serif;
+    font-size: 1em;
+    color: #fff;
+}
+
+.infoDeveloper a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    color: #fff;
+}
+ 
+.infoDeveloper span {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 24px;
+    height: 24px;
+}
+
+.infoDeveloper .wgma99--logo {
+    background-image: url('https://img.icons8.com/ios/24/EBEBEB/99.png');
+}
+
+.infoDeveloper .linkedin--logo {
+    background-image: url('https://img.icons8.com/color/24/null/linkedin-circled--v1.png');
+}
+
+.footer--logo{
+    width: 58px;
+    margin-right: calc(50% - 29px);
+}
+
+.footer--logo img {
+    width: 100%;
+}

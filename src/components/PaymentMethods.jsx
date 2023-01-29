@@ -2,7 +2,6 @@ import '../css/PaymentMethods.css';
 import { useState } from 'react';
 
 export default function PaymentMethods() {
-    const [ methods, setMethods] = useState([]);
     const [ methodsCountry, setMethodsCountry] = useState([]);
     const [ userData, setUserData ] = useState({namePlayer: '', age: '', user: '', countryPlayer: '', payMethod: ''});
 
@@ -37,7 +36,7 @@ export default function PaymentMethods() {
     }
 
   return (
-      <section className='section-paymentMethods'>
+      <section id='paymentMethods' className='section-paymentMethods'>
         <form>
             <div className="paymentMethods--titleContainer">
                 <h2 className='paymentMethods--title'>Métodos de Pago</h2> <hr />
@@ -78,7 +77,7 @@ export default function PaymentMethods() {
                     }
                 </select>
             </div>
-            <a className='sendButtom' onClick={console.log(userData)} target='_blank' href={`https://api.whatsapp.com/send?phone=19014949315&text=Hola%20soy%20${userData.namePlayer},%20me%20gustaría%20participar%20desde%20${userData.countryPlayer},%20deseo%20realizar%20el%20pago%20a%20través%20de%20${userData.payMethod}.%20(user:%20${userData.user})`}>Enviar</a>
+            <a className='sendButtom' target='_blank' href={`https://api.whatsapp.com/send?phone=19014949315&text=Hola%20soy%20${userData.namePlayer},%20me%20gustaría%20participar%20desde%20${userData.countryPlayer},%20deseo%20realizar%20el%20pago%20a%20través%20de%20${userData.payMethod}.%20(user:%20${userData.user})`}>Enviar</a>
         </form>
     </section>
   )
